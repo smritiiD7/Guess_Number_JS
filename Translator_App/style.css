@@ -31,8 +31,8 @@ body{
   border-bottom: 1px solid green;
 }
 .text-input .to-text{
-border-radius: 10px;
-border-left:3px solid green;
+border-radius: 1px;
+border-left:1px solid green;
 }
 .text-input textarea{
   height: 250px;
@@ -46,10 +46,29 @@ border-left:3px solid green;
 
 }
 
-.controls{
+.controls, li{
   display: flex;
-  list-style:none;
   align-items:center;
   justify-content:space-between;
+  
+}
+.container{
+  list-style:none;
+  padding:15px 15px;
 
+}
+
+
+.controls .icons i{
+  color: darkgreen;
+  width: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.controls .row select{
+  border:none;
+  outline:none;
+  background:none;
+  font-size: 18px;
 }
