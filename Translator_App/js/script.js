@@ -1,4 +1,6 @@
 const fromText = document.querySelector(".from-text");
+const toText = document.querySelector(".to-text");
+
 const selectTag = document.querySelectorAll("select");
 translateBtn = document.querySelector("button");
 
@@ -31,5 +33,6 @@ let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${trans
 //and in another method rescevingg the object
 fetch(apiUrl).then(res=>res.json()).then(data=>{
   console.log(data);
-})
+  toText.value= data.responseData.translatedText;
+});
 });
